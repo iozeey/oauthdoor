@@ -1,0 +1,23 @@
+<h1>Register</h1>
+
+<%= form_for @user do |f| %>
+  <%= render 'shared/errors', object: @user %>
+  <div>
+    <%= f.label :email %>
+    <%= f.email_field :email, :required => true %>
+  </div>
+
+  <div>
+    <%= f.label :password %>
+    <%= f.password_field :password,:required => true %>
+  </div>
+
+  <div>
+    <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation, :required => true %>
+  </div>
+
+  <%= f.submit %>
+<% end %>
+
+<%= link_to 'Log In', new_session_path %>

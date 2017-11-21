@@ -1,0 +1,1986 @@
+Started GET "/" for 127.0.0.1 at 2017-11-21 14:05:37 +0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (14.9ms)
+Completed 200 OK in 882ms (Views: 43.5ms)
+
+
+Started GET "/routes" for 127.0.0.1 at 2017-11-21 14:05:43 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/routes"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-11-21 14:05:51 +0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (3.2ms)
+Completed 200 OK in 6ms (Views: 4.8ms)
+
+
+  [1m[35m (15.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1245.9ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (485.9ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK(1800680648829145440, 0)[0m
+  [1m[35m (12.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateUsers (20171121090654)
+  [1m[35m (398.1ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `email` varchar(255), `password_digest` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (506.6ms)[0m  [1m[35mCREATE  INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (45.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20171121090654')[0m
+  [1m[35m (51.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2017-11-21 09:11:28', '2017-11-21 09:11:28')[0m
+  [1m[35m (28.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK(1800680648829145440)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/new" for 127.0.0.1 at 2017-11-21 14:21:16 +0500
+  [1m[35m (8.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users/new" for 127.0.0.1 at 2017-11-21 14:21:27 +0500
+  [1m[35m (19.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.5ms)
+  Rendered users/new.html.erb within layouts/application (419.7ms)
+Completed 500 Internal Server Error in 439ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_session_path' for #<#<Class:0x00000002ad5078>:0x00000002aad578>
+Did you mean?  new_user_path):
+    20:   <%= f.submit %>
+    21: <% end %>
+    22: 
+    23: <%= link_to 'Log In', new_session_path %>
+  
+app/views/users/new.html.erb:23:in `_app_views_users_new_html_erb___1546475156795323320_22462620'
+Started GET "/users/new" for 127.0.0.1 at 2017-11-21 14:31:45 +0500
+  [1m[35m (31.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (1.2ms)
+  Rendered users/new.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 2366ms (Views: 2342.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-11-21 14:32:42 +0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 45ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-11-21 14:32:44 +0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y4blFVYRq2QhXQVOo3iQsD/Qf6gJ3NAw1q5qvNLZElHsgG+BZUTIguHEtEoGqIslc6IZBdQj1vlvYh5HjtlkFA==", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In!"}
+  [1m[36mUser Load (16.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = '' LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 74ms (Views: 39.5ms | ActiveRecord: 16.9ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-11-21 14:32:45 +0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GNIHJfJ26kXerAprvZmPVQlPIndnOJgyFCtAi/fszU9B0te+/6vQMLJPdFjaE4bfktxh4THUbomm7kHUa6yI9Q==", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In!"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = '' LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 50ms (Views: 46.9ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-11-21 14:32:46 +0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WVKFV4WcunZ41zfoBMp1HRNFfNuJMHag3EnMhxHCgZ4AUlXMiEGAAxQ0SdtjQHyXiNY/Td/cgBtujM3YjYLEJA==", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In!"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = '' LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 59ms (Views: 53.7ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-11-21 14:32:46 +0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t05uz+S/YYrwPSt874SiCKRgeyjtKsvt2af+djSXBvDuTr5U6WJb/5zeVU+IDquCP/M4vrvGPVZrYv8pqNdDSg==", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In!"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = '' LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 47ms (Views: 44.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-11-21 14:32:46 +0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7thz+Zfr73X6r77lK+1Del9P4Nz+XSOot3LQm8neXSu32KNimjbVAJZMwNZMZ0rwxNyjSqix1RMFt9HEVZ4YkQ==", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In!"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = '' LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 50ms (Views: 47.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-11-21 14:32:47 +0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KmRgALmjDxyWMrGN1LNgj0GX19N/9adQw6jbuKhpiyZzZLCbtH41afrRz76zOWkF2gSURSkZUetxbdrnNCnOnA==", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In!"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = '' LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 45ms (Views: 41.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2017-11-21 14:33:34 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/sessions"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-11-21 14:33:51 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-11-21 14:33:54 +0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/zeeshan/rails/mServer/app/views/sessions/new.html.erb:5: syntax error, unexpected =>
+label_tag :email, required: => true );@output_buffer.safe_ap
+                              ^
+/home/zeeshan/rails/mServer/app/views/sessions/new.html.erb:11: syntax error, unexpected =>
+ld_tag :password, required: => true );@output_buffer.safe_ap
+                              ^):
+  
+app/views/sessions/new.html.erb:5: syntax error, unexpected =>
+app/views/sessions/new.html.erb:11: syntax error, unexpected =>
+Started GET "/" for 127.0.0.1 at 2017-11-21 14:34:01 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 54ms (Views: 52.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-21 14:34:02 +0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.6ms)
+  Rendered users/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 45ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-21 14:34:32 +0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.5ms)
+  Rendered users/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 55ms (Views: 52.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-11-21 14:34:34 +0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 49ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-11-21 14:35:45 +0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 50ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-21 14:35:57 +0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.6ms)
+  Rendered users/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 63ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-11-21 14:36:01 +0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 49ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-11-21 14:36:46 +0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 42ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-11-21 14:36:47 +0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KR84TtBlvOPk7+R0VmUvfb+5HUpBOfk9y1xbV551a4xwH+jV3biGlogMmkcx7yb3JCpe3BfVD4Z5mVoIAjUuNg==", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In!"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = '' LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 47ms (Views: 43.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-21 14:36:49 +0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.5ms)
+  Rendered users/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 45ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (32.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK(1800680648829145440, 0)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateDoorkeeperTables (20171121094557)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK(1800680648829145440)[0m
+  [1m[35m (18.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK(1800680648829145440, 0)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateDoorkeeperTables (20171121094557)
+  [1m[35m (366.3ms)[0m  [1m[35mCREATE TABLE `oauth_applications` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `uid` varchar(255) NOT NULL, `secret` varchar(255) NOT NULL, `redirect_uri` text NOT NULL, `scopes` varchar(255) DEFAULT '' NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (226.7ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_oauth_applications_on_uid`  ON `oauth_applications` (`uid`) [0m
+  [1m[35m (441.8ms)[0m  [1m[35mCREATE TABLE `oauth_access_grants` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `resource_owner_id` int NOT NULL, `application_id` bigint NOT NULL, `token` varchar(255) NOT NULL, `expires_in` int NOT NULL, `redirect_uri` text NOT NULL, `created_at` datetime NOT NULL, `revoked_at` datetime, `scopes` varchar(255),  INDEX `index_oauth_access_grants_on_application_id`  (`application_id`)) ENGINE=InnoDB[0m
+  [1m[35m (220.6ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_oauth_access_grants_on_token`  ON `oauth_access_grants` (`token`) [0m
+  [1m[35m (1083.2ms)[0m  [1m[35mALTER TABLE `oauth_access_grants` ADD CONSTRAINT `fk_rails_b4b53e07b8`
+FOREIGN KEY (`application_id`)
+  REFERENCES `oauth_applications` (`id`)
+[0m
+  [1m[35m (500.6ms)[0m  [1m[35mCREATE TABLE `oauth_access_tokens` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `resource_owner_id` int, `application_id` bigint, `token` varchar(255) NOT NULL, `refresh_token` varchar(255), `expires_in` int, `revoked_at` datetime, `created_at` datetime NOT NULL, `scopes` varchar(255), `previous_refresh_token` varchar(255) DEFAULT '' NOT NULL,  INDEX `index_oauth_access_tokens_on_application_id`  (`application_id`)) ENGINE=InnoDB[0m
+  [1m[35m (224.1ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_oauth_access_tokens_on_token`  ON `oauth_access_tokens` (`token`) [0m
+  [1m[35m (251.4ms)[0m  [1m[35mCREATE  INDEX `index_oauth_access_tokens_on_resource_owner_id`  ON `oauth_access_tokens` (`resource_owner_id`) [0m
+  [1m[35m (255.5ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_oauth_access_tokens_on_refresh_token`  ON `oauth_access_tokens` (`refresh_token`) [0m
+  [1m[35m (1017.2ms)[0m  [1m[35mALTER TABLE `oauth_access_tokens` ADD CONSTRAINT `fk_rails_732cb83ab7`
+FOREIGN KEY (`application_id`)
+  REFERENCES `oauth_applications` (`id`)
+[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (18.9ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20171121094557')[0m
+  [1m[35m (44.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK(1800680648829145440)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/oauth/applications" for 127.0.0.1 at 2017-11-21 16:10:02 +0500
+  [1m[35m (13.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Doorkeeper::ApplicationsController#index as HTML
+  Rendering /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/index.html.erb within layouts/doorkeeper/admin
+  [1m[36mDoorkeeper::Application Load (0.5ms)[0m  [1m[34mSELECT `oauth_applications`.* FROM `oauth_applications`[0m
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/index.html.erb within layouts/doorkeeper/admin (32.7ms)
+Completed 200 OK in 1199ms (Views: 1182.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/oauth/applications/new" for 127.0.0.1 at 2017-11-21 16:10:06 +0500
+Processing by Doorkeeper::ApplicationsController#new as HTML
+  Rendering /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/new.html.erb within layouts/doorkeeper/admin
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/_form.html.erb (26.5ms)
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/new.html.erb within layouts/doorkeeper/admin (37.5ms)
+Completed 200 OK in 124ms (Views: 56.9ms | ActiveRecord: 30.9ms)
+
+
+Started POST "/oauth/applications" for 127.0.0.1 at 2017-11-21 16:10:54 +0500
+Processing by Doorkeeper::ApplicationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TLKUoFza6jyad5zbzxLn23R09jo+oanx+mMi+r4FjHKdY2mTbXPs8b5h74CUT594Ol6hmJUqErOEyG9AuDjXtQ==", "doorkeeper_application"=>{"name"=>"test Client", "redirect_uri"=>"http://localhost:3001/oauth/callback", "scopes"=>""}, "commit"=>"Submit"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDoorkeeper::Application Exists (39.0ms)[0m  [1m[34mSELECT  1 AS one FROM `oauth_applications` WHERE `oauth_applications`.`uid` = BINARY '360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5' LIMIT 1[0m
+  [1m[35mSQL (111.5ms)[0m  [1m[32mINSERT INTO `oauth_applications` (`name`, `uid`, `secret`, `redirect_uri`, `created_at`, `updated_at`) VALUES ('test Client', '360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5', 'eafc067af0f36695e160a4c21e57255fec95c715c080cb62dcb0d79ec84183f0', 'http://localhost:3001/oauth/callback', '2017-11-21 11:10:55', '2017-11-21 11:10:55')[0m
+  [1m[35m (57.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/oauth/applications/1
+Completed 302 Found in 244ms (ActiveRecord: 208.2ms)
+
+
+Started GET "/oauth/applications/1" for 127.0.0.1 at 2017-11-21 16:10:55 +0500
+Processing by Doorkeeper::ApplicationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDoorkeeper::Application Load (0.8ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`id` = 1 LIMIT 1[0m
+  Rendering /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/show.html.erb within layouts/doorkeeper/admin
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/_delete_form.html.erb (2.2ms)
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/show.html.erb within layouts/doorkeeper/admin (24.9ms)
+Completed 200 OK in 57ms (Views: 40.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2017-11-21 16:32:37 +0500
+  [1m[35m (17.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/users"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/user" for 127.0.0.1 at 2017-11-21 16:32:50 +0500
+Processing by Api::UsersController#show as HTML
+Filter chain halted as :doorkeeper_authorize! rendered or redirected
+Completed 401 Unauthorized in 179ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/oauth/authorize?client_id=%3C360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5%3E&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code" for 127.0.0.1 at 2017-11-21 16:36:32 +0500
+  [1m[35m (13.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"<360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5>", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code"}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (Please configure doorkeeper resource_owner_authenticator block located in /home/zeeshan/rails/mServer/config/initializers/doorkeeper.rb):
+  
+config/initializers/doorkeeper.rb:7:in `block (2 levels) in <top (required)>'
+Started GET "/oauth/authorize?client_id=%3C360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5%3E&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code" for 127.0.0.1 at 2017-11-21 16:38:11 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"<360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5>", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (Please configure doorkeeper resource_owner_authenticator block located in /home/zeeshan/rails/mServer/config/initializers/doorkeeper.rb):
+  
+config/initializers/doorkeeper.rb:7:in `block (2 levels) in <top (required)>'
+Started GET "/oauth/authorize?client_id=%3C360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5%3E&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code" for 127.0.0.1 at 2017-11-21 16:42:09 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"<360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5>", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (Please configure doorkeeper resource_owner_authenticator block located in /home/zeeshan/rails/mServer/config/initializers/doorkeeper.rb):
+  
+config/initializers/doorkeeper.rb:7:in `block (2 levels) in <top (required)>'
+Started GET "/oauth/authorize?client_id=360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code&scope=" for 127.0.0.1 at 2017-11-21 16:43:40 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code", "scope"=>""}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (Please configure doorkeeper resource_owner_authenticator block located in /home/zeeshan/rails/mServer/config/initializers/doorkeeper.rb):
+  
+config/initializers/doorkeeper.rb:7:in `block (2 levels) in <top (required)>'
+Started GET "/oauth/authorize?client_id=360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code&scope=" for 127.0.0.1 at 2017-11-21 16:44:49 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code", "scope"=>""}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (Please configure doorkeeper resource_owner_authenticator block located in /home/zeeshan/rails/mServer/config/initializers/doorkeeper.rb):
+  
+config/initializers/doorkeeper.rb:7:in `block (2 levels) in <top (required)>'
+Started GET "/oauth/authorize?client_id=%3C360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5%3E&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code" for 127.0.0.1 at 2017-11-21 16:45:04 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"<360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5>", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (Please configure doorkeeper resource_owner_authenticator block located in /home/zeeshan/rails/mServer/config/initializers/doorkeeper.rb):
+  
+config/initializers/doorkeeper.rb:7:in `block (2 levels) in <top (required)>'
+Started GET "/oauth/authorize?client_id=%3C360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5%3E&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code" for 127.0.0.1 at 2017-11-21 16:45:25 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"<360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5>", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (Please configure doorkeeper resource_owner_authenticator block located in /home/zeeshan/rails/mServer/config/initializers/doorkeeper.rb):
+  
+config/initializers/doorkeeper.rb:7:in `block (2 levels) in <top (required)>'
+Started GET "/" for 127.0.0.1 at 2017-11-21 16:46:23 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1328ms (Views: 1249.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-21 16:46:27 +0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (1.2ms)
+  Rendered users/new.html.erb within layouts/application (103.9ms)
+Completed 200 OK in 235ms (Views: 160.9ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-11-21 16:46:35 +0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 62ms (Views: 53.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-11-21 16:46:36 +0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vY1Xmi/qa0Y9Wo5wErE5sBkHaH+gNnpj/h5lo3sAeMMyi90OHL8IoP3DP3S3YSIlVXUO0n3JfKpH0hFYJwAOhg==", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In!"}
+  [1m[36mUser Load (45.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = '' LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 133ms (Views: 52.5ms | ActiveRecord: 45.5ms)
+
+
+Started GET "/api/user" for 127.0.0.1 at 2017-11-21 16:49:31 +0500
+  [1m[35m (7.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Api::UsersController#show as HTML
+Filter chain halted as :doorkeeper_authorize! rendered or redirected
+Completed 401 Unauthorized in 24ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/oauth/authorize?client_id=360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code" for 127.0.0.1 at 2017-11-21 16:49:35 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_resource_owner! rendered or redirected
+Completed 302 Found in 10ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-11-21 16:49:35 +0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 400ms (Views: 398.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/oauth/authorize?client_id=360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code" for 127.0.0.1 at 2017-11-21 16:49:48 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_resource_owner! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-11-21 16:49:48 +0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 53ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-11-21 16:49:49 +0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zXhkYr1mtOuiGgDD8p7M85fMvcJf7ghTXOwNjiGsMqyUeLT5sLuOns75fvCVFMV5DF/+VAkC/ujuKQzRvex3Fg==", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In!"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = '' LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 56ms (Views: 50.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-21 16:49:52 +0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.6ms)
+  Rendered users/new.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 70ms (Views: 54.2ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-11-21 16:50:07 +0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"911kO4VBv/2exckXVkw2JF7SR7edJdNcsRBk7ptgYMCyITGB5zE2t03QkMCyKJR4nQMSWKximZ6oM0sn6p/GBg==", "user"=>{"email"=>"junaid@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (13.6ms)[0m  [1m[32mINSERT INTO `users` (`email`, `password_digest`, `created_at`, `updated_at`) VALUES ('junaid@example.com', '$2a$10$4biRjWLhLQRnd7VKgViUkOI3pGNCEMK.Uuwz0RNjk5s0XDbmYghEe', '2017-11-21 11:50:08', '2017-11-21 11:50:08')[0m
+  [1m[35m (60.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 207ms (ActiveRecord: 74.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 16:50:08 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (11.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered pages/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 80ms (Views: 67.4ms | ActiveRecord: 11.0ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2017-11-21 16:50:12 +0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pOCLoQ5cktHR2lipSmqWnkun+aGr7ayKR7ckfOGbgNT94Fs6A4GopL05Jpot4J8U0DS6N/0BWjH1ciUjfdvFbg=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 16:50:12 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 47ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/oauth/authorize?client_id=360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code" for 127.0.0.1 at 2017-11-21 16:50:19 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_resource_owner! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-11-21 16:50:19 +0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 52ms (Views: 49.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-11-21 16:50:34 +0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yMrQmtrUp3evH0Yhq43hvw7v2cjoNWF2lEKgMv8roy6RygAB1wmdAsP8OBLMB+g1lXyaXr7Zl80mh6FtY2vmlA==", "email"=>"junaid@example.com", "password"=>"[FILTERED]", "commit"=>"Log In!"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'junaid@example.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 131ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 16:50:34 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered pages/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2017-11-21 16:50:40 +0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"MCHTi92ILhxLLBhxB6ZveQwW6b+3sBimxKe6eZTnSqVpIQMQ0FUUaSfPZkJgLGbzl4WqKeFc7h12YrsmCKcPHw=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 16:50:40 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/oauth/authorize?client_id=360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code&scope=" for 127.0.0.1 at 2017-11-21 16:54:06 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code", "scope"=>""}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/sessions/new
+Filter chain halted as :authenticate_resource_owner! rendered or redirected
+Completed 302 Found in 9ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-11-21 16:54:06 +0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 61ms (Views: 59.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/oauth/applications" for 127.0.0.1 at 2017-11-21 16:56:53 +0500
+Processing by Doorkeeper::ApplicationsController#index as HTML
+  Rendering /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/index.html.erb within layouts/doorkeeper/admin
+  [1m[36mDoorkeeper::Application Load (0.6ms)[0m  [1m[34mSELECT `oauth_applications`.* FROM `oauth_applications`[0m
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/_delete_form.html.erb (2.4ms)
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/index.html.erb within layouts/doorkeeper/admin (29.4ms)
+Completed 200 OK in 160ms (Views: 139.6ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/oauth/applications/1/edit" for 127.0.0.1 at 2017-11-21 16:56:58 +0500
+Processing by Doorkeeper::ApplicationsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDoorkeeper::Application Load (0.5ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`id` = 1 LIMIT 1[0m
+  Rendering /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/edit.html.erb within layouts/doorkeeper/admin
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/_form.html.erb (22.3ms)
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/edit.html.erb within layouts/doorkeeper/admin (26.6ms)
+Completed 200 OK in 49ms (Views: 43.6ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/oauth/applications/1" for 127.0.0.1 at 2017-11-21 16:57:20 +0500
+Processing by Doorkeeper::ApplicationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BB+0Py79Pc4XevxBZGXkqxapSfym7ABWDqV9sZQD7eyYoKpCfwzNHv3V2W4uvYGIgxwXO4cmRJuk6hl+UIPk9w==", "doorkeeper_application"=>{"name"=>"test Client", "redirect_uri"=>"http://localhost:3001/oauth/callback", "scopes"=>"public, write"}, "commit"=>"Submit", "id"=>"1"}
+  [1m[36mDoorkeeper::Application Load (1.6ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDoorkeeper::Application Exists (40.0ms)[0m  [1m[34mSELECT  1 AS one FROM `oauth_applications` WHERE `oauth_applications`.`uid` = BINARY '360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5' AND (`oauth_applications`.`id` != 1) LIMIT 1[0m
+  [1m[35mSQL (94.0ms)[0m  [1m[33mUPDATE `oauth_applications` SET `scopes` = 'public, write', `updated_at` = '2017-11-21 11:57:20' WHERE `oauth_applications`.`id` = 1[0m
+  [1m[35m (117.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/oauth/applications/1
+Completed 302 Found in 289ms (ActiveRecord: 253.2ms)
+
+
+Started GET "/oauth/applications/1" for 127.0.0.1 at 2017-11-21 16:57:20 +0500
+Processing by Doorkeeper::ApplicationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDoorkeeper::Application Load (0.4ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`id` = 1 LIMIT 1[0m
+  Rendering /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/show.html.erb within layouts/doorkeeper/admin
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/_delete_form.html.erb (2.6ms)
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/show.html.erb within layouts/doorkeeper/admin (9.2ms)
+Completed 200 OK in 24ms (Views: 20.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/user" for 127.0.0.1 at 2017-11-21 16:57:43 +0500
+Processing by Api::UsersController#show as HTML
+Filter chain halted as :doorkeeper_authorize! rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-11-21 16:57:58 +0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 62ms (Views: 59.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-21 16:57:59 +0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.8ms)
+  Rendered users/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 70ms (Views: 53.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 16:58:02 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 52ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/oauth/authorize?client_id=360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code&scope=public+write" for 127.0.0.1 at 2017-11-21 16:58:07 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code", "scope"=>"public write"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_resource_owner! rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-11-21 16:58:07 +0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 65ms (Views: 63.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-11-21 16:58:14 +0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vrXha6Dt1JimEaPNTVYfJEgELyW+ZZqHanuLf7/XzNrntTHwrTDu7cry3f4q3Bau05dss+iJbDzYvoogI5eJYA==", "email"=>"junaid@example.com", "password"=>"[FILTERED]", "commit"=>"Log In!"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'junaid@example.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 136ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 16:58:14 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered pages/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 50ms (Views: 48.0ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2017-11-21 16:58:17 +0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Q4aXkpH3RfHYyGGOC2Rndoo+Ns1sd3uG3gaK2Bu3Ff0ahkcJnCp/hLQrH71s7m78Ea11WzqbjT1sw4uHh/dQRw=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 16:58:17 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 51ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-21 16:58:19 +0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.9ms)
+  Rendered users/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 69ms (Views: 66.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-21 16:59:07 +0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.7ms)
+  Rendered users/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 56ms (Views: 54.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/oauth/authorize" for 127.0.0.1 at 2017-11-21 16:59:46 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_resource_owner! rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-11-21 16:59:46 +0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 91ms (Views: 89.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-11-21 17:00:00 +0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NI09UmumpVGwK3/yYZuu4H0VAvXdqkKIxc2A0qhN/Oltje3JZnufJNzIAcEGEadq5oZBY4tGtDN3CIGNNA25Uw==", "email"=>"junaid@example.com", "password"=>"[FILTERED]", "commit"=>"Log In!"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'junaid@example.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 131ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 17:00:00 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered pages/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 57ms (Views: 55.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/oauth/authorize" for 127.0.0.1 at 2017-11-21 17:00:03 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mDoorkeeper::Application Load (0.6ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`uid` = '' LIMIT 1[0m
+  Rendering /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/authorizations/error.html.erb within layouts/doorkeeper/application
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/authorizations/error.html.erb within layouts/doorkeeper/application (2.5ms)
+Completed 200 OK in 317ms (Views: 312.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/oauth/authorize?client_id=%3C360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5%3E&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code" for 127.0.0.1 at 2017-11-21 17:02:23 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"<360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5>", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mDoorkeeper::Application Load (0.4ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`uid` = '<360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5>' LIMIT 1[0m
+  Rendering /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/authorizations/error.html.erb within layouts/doorkeeper/application
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/authorizations/error.html.erb within layouts/doorkeeper/application (1.7ms)
+Completed 200 OK in 35ms (Views: 30.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 17:02:31 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered pages/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 99ms (Views: 85.1ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2017-11-21 17:02:33 +0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6rD3ni6Zrb+vcfe2HbiP9567BVMOfeYA66Vw52ieRD6zsCcFI0SXysOSiYV6MoZ9BShGxViRELtZYHG49N4BhA=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 17:02:33 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 79ms (Views: 77.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/oauth/authorize" for 127.0.0.1 at 2017-11-21 17:02:41 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_resource_owner! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-11-21 17:02:41 +0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 44ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-11-21 17:02:52 +0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u0HdbEW23TiCIp+o7Hdb6XWF3XhSCjFySGWJQzsE8iPiQQ33SGvnTe7B4ZuL/VJj7hae7gTmx8n6oIgcp0S3mQ==", "email"=>"junaid@example.com", "password"=>"[FILTERED]", "commit"=>"Log In!"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'junaid@example.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 131ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 17:02:52 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered pages/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 47ms (Views: 45.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/oauth/authorize" for 127.0.0.1 at 2017-11-21 17:02:57 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mDoorkeeper::Application Load (0.4ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`uid` = '' LIMIT 1[0m
+  Rendering /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/authorizations/error.html.erb within layouts/doorkeeper/application
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/authorizations/error.html.erb within layouts/doorkeeper/application (0.9ms)
+Completed 200 OK in 23ms (Views: 18.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/oauth/authorize?client_id=360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code&scope=public+write" for 127.0.0.1 at 2017-11-21 17:03:09 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code", "scope"=>"public write"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mDoorkeeper::Application Load (0.5ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`uid` = '360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5' LIMIT 1[0m
+  Rendering /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/authorizations/error.html.erb within layouts/doorkeeper/application
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/authorizations/error.html.erb within layouts/doorkeeper/application (0.9ms)
+Completed 200 OK in 21ms (Views: 17.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/oauth/applications" for 127.0.0.1 at 2017-11-21 17:04:02 +0500
+Processing by Doorkeeper::ApplicationsController#index as HTML
+  Rendering /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/index.html.erb within layouts/doorkeeper/admin
+  [1m[36mDoorkeeper::Application Load (1.4ms)[0m  [1m[34mSELECT `oauth_applications`.* FROM `oauth_applications`[0m
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/_delete_form.html.erb (1.5ms)
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/index.html.erb within layouts/doorkeeper/admin (8.6ms)
+Completed 200 OK in 33ms (Views: 29.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/oauth/applications/1/edit" for 127.0.0.1 at 2017-11-21 17:04:04 +0500
+Processing by Doorkeeper::ApplicationsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDoorkeeper::Application Load (0.6ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`id` = 1 LIMIT 1[0m
+  Rendering /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/edit.html.erb within layouts/doorkeeper/admin
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/_form.html.erb (5.9ms)
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/edit.html.erb within layouts/doorkeeper/admin (7.9ms)
+Completed 200 OK in 25ms (Views: 20.7ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/oauth/applications/1" for 127.0.0.1 at 2017-11-21 17:04:12 +0500
+Processing by Doorkeeper::ApplicationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ngVkj0Oahx1gHRdmQyv01elHO9NMmquvzQadMmmIBM0CunryEmt3zYqyMkkJ85H2fPJlFG1Q72JnSfn9rQgN1g==", "doorkeeper_application"=>{"name"=>"test Client", "redirect_uri"=>"http://localhost:3001/oauth/callback", "scopes"=>"public write"}, "commit"=>"Submit", "id"=>"1"}
+  [1m[36mDoorkeeper::Application Load (0.4ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDoorkeeper::Application Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `oauth_applications` WHERE `oauth_applications`.`uid` = BINARY '360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5' AND (`oauth_applications`.`id` != 1) LIMIT 1[0m
+  [1m[35mSQL (51.6ms)[0m  [1m[33mUPDATE `oauth_applications` SET `scopes` = 'public write', `updated_at` = '2017-11-21 12:04:12' WHERE `oauth_applications`.`id` = 1[0m
+  [1m[35m (77.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/oauth/applications/1
+Completed 302 Found in 139ms (ActiveRecord: 130.1ms)
+
+
+Started GET "/oauth/applications/1" for 127.0.0.1 at 2017-11-21 17:04:12 +0500
+Processing by Doorkeeper::ApplicationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDoorkeeper::Application Load (0.4ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`id` = 1 LIMIT 1[0m
+  Rendering /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/show.html.erb within layouts/doorkeeper/admin
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/_delete_form.html.erb (1.3ms)
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/show.html.erb within layouts/doorkeeper/admin (4.7ms)
+Completed 200 OK in 20ms (Views: 16.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/oauth/authorize?client_id=360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code&scope=public+write" for 127.0.0.1 at 2017-11-21 17:04:19 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code", "scope"=>"public write"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mDoorkeeper::Application Load (0.4ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`uid` = '360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5' LIMIT 1[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDoorkeeper::AccessToken Load (31.7ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`application_id` = 1 AND `oauth_access_tokens`.`resource_owner_id` = 1 AND `oauth_access_tokens`.`revoked_at` IS NULL ORDER BY created_at desc LIMIT 1[0m
+  Rendering /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/authorizations/new.html.erb within layouts/doorkeeper/application
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/authorizations/new.html.erb within layouts/doorkeeper/application (6.1ms)
+Completed 200 OK in 77ms (Views: 35.3ms | ActiveRecord: 33.6ms)
+
+
+Started GET "/oauth/authorize?client_id=360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code&scope=public+write" for 127.0.0.1 at 2017-11-21 17:07:47 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code", "scope"=>"public write"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mDoorkeeper::Application Load (0.4ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`uid` = '360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5' LIMIT 1[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDoorkeeper::AccessToken Load (0.4ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`application_id` = 1 AND `oauth_access_tokens`.`resource_owner_id` = 1 AND `oauth_access_tokens`.`revoked_at` IS NULL ORDER BY created_at desc LIMIT 1[0m
+  Rendering /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/authorizations/new.html.erb within layouts/doorkeeper/application
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/authorizations/new.html.erb within layouts/doorkeeper/application (12.8ms)
+Completed 200 OK in 64ms (Views: 42.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-21 17:10:27 +0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.6ms)
+  Rendered users/new.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 79ms (Views: 59.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/oauth/authorize?client_id=360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code&scope=public+write" for 127.0.0.1 at 2017-11-21 17:10:31 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code", "scope"=>"public write"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mDoorkeeper::Application Load (0.3ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`uid` = '360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5' LIMIT 1[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDoorkeeper::AccessToken Load (0.5ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`application_id` = 1 AND `oauth_access_tokens`.`resource_owner_id` = 1 AND `oauth_access_tokens`.`revoked_at` IS NULL ORDER BY created_at desc LIMIT 1[0m
+  Rendering /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/authorizations/new.html.erb within layouts/doorkeeper/application
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/authorizations/new.html.erb within layouts/doorkeeper/application (5.4ms)
+Completed 200 OK in 33ms (Views: 24.9ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/oauth/authorize" for 127.0.0.1 at 2017-11-21 17:13:23 +0500
+Processing by Doorkeeper::AuthorizationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pg2Cyg/Xuue3PrIUWOFLqaurJhGhTn1bpJks0rXqxlqg2loPEbVIf+GlTsOtnegHDWg44xncBfJhaCbpZQFbXA==", "client_id"=>"360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5", "redirect_uri"=>"http://localhost:3001/oauth/callback", "state"=>"", "response_type"=>"code", "scope"=>"public write", "commit"=>"Authorize"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mDoorkeeper::Application Load (0.5ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`uid` = '360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5' LIMIT 1[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDoorkeeper::AccessGrant Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM `oauth_access_grants` WHERE `oauth_access_grants`.`token` = BINARY '9ebe550b2666434e1467e89609d143e710b8c5ba470fc2ee9caf2434069c9e27' LIMIT 1[0m
+  [1m[35mSQL (37.0ms)[0m  [1m[32mINSERT INTO `oauth_access_grants` (`resource_owner_id`, `application_id`, `token`, `expires_in`, `redirect_uri`, `created_at`, `scopes`) VALUES (1, 1, '9ebe550b2666434e1467e89609d143e710b8c5ba470fc2ee9caf2434069c9e27', 600, 'http://localhost:3001/oauth/callback', '2017-11-21 12:13:24', 'public write')[0m
+  [1m[35m (46.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3001/oauth/callback?code=9ebe550b2666434e1467e89609d143e710b8c5ba470fc2ee9caf2434069c9e27
+Completed 302 Found in 116ms (ActiveRecord: 87.7ms)
+
+
+Started GET "/oauth/authorize?client_id=360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code&scope=public+write" for 127.0.0.1 at 2017-11-21 17:14:53 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code", "scope"=>"public write"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mDoorkeeper::Application Load (0.4ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`uid` = '360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5' LIMIT 1[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDoorkeeper::AccessToken Load (0.6ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`application_id` = 1 AND `oauth_access_tokens`.`resource_owner_id` = 1 AND `oauth_access_tokens`.`revoked_at` IS NULL ORDER BY created_at desc LIMIT 1[0m
+  Rendering /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/authorizations/new.html.erb within layouts/doorkeeper/application
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/authorizations/new.html.erb within layouts/doorkeeper/application (19.7ms)
+Completed 200 OK in 78ms (Views: 55.0ms | ActiveRecord: 3.2ms)
+
+
+Started DELETE "/oauth/authorize" for 127.0.0.1 at 2017-11-21 17:15:00 +0500
+Processing by Doorkeeper::AuthorizationsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nxXmXGCrB0gdT7En+BuEsWlx1IhDYWvINAQMmqacCJSdjIzBtWMr20ZK13MVj+oXmbIeY7PloLh/tqlhQTbmhA==", "client_id"=>"360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5", "redirect_uri"=>"http://localhost:3001/oauth/callback", "state"=>"", "response_type"=>"code", "scope"=>"public write", "commit"=>"Deny"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mDoorkeeper::Application Load (0.5ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`uid` = '360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5' LIMIT 1[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3001/oauth/callback?error=access_denied&error_description=The+resource+owner+or+authorization+server+denied+the+request.
+Completed 302 Found in 6ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-11-21 17:15:11 +0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 80ms (Views: 75.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-11-21 17:15:18 +0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SN/Fq+fqoTyk9y5jmfOn3Gunu0jBD4Av4mf7QEYpvNjH2U8/1L/C2mRun2c8I7xJJ9Xd5RzwhuZbq4+7GinKnQ==", "email"=>"junaid@example.com", "password"=>"[FILTERED]", "commit"=>"Log In!"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'junaid@example.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 132ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 17:15:18 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered pages/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 40ms (Views: 38.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/oauth/authorize?client_id=360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code&scope=public+write" for 127.0.0.1 at 2017-11-21 17:15:21 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code", "scope"=>"public write"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mDoorkeeper::Application Load (0.6ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`uid` = '360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5' LIMIT 1[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDoorkeeper::AccessToken Load (0.5ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`application_id` = 1 AND `oauth_access_tokens`.`resource_owner_id` = 1 AND `oauth_access_tokens`.`revoked_at` IS NULL ORDER BY created_at desc LIMIT 1[0m
+  Rendering /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/authorizations/new.html.erb within layouts/doorkeeper/application
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/authorizations/new.html.erb within layouts/doorkeeper/application (6.3ms)
+Completed 200 OK in 34ms (Views: 25.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/oauth/authorize?client_id=%3C360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5%3E&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code" for 127.0.0.1 at 2017-11-21 17:16:43 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"<360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5>", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mDoorkeeper::Application Load (0.5ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`uid` = '<360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5>' LIMIT 1[0m
+  Rendering /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/authorizations/error.html.erb within layouts/doorkeeper/application
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/authorizations/error.html.erb within layouts/doorkeeper/application (0.9ms)
+Completed 200 OK in 25ms (Views: 20.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/oauth/authorize?client_id=360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code&scope=public+write" for 127.0.0.1 at 2017-11-21 17:16:50 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code", "scope"=>"public write"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mDoorkeeper::Application Load (0.6ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`uid` = '360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5' LIMIT 1[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDoorkeeper::AccessToken Load (0.6ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`application_id` = 1 AND `oauth_access_tokens`.`resource_owner_id` = 1 AND `oauth_access_tokens`.`revoked_at` IS NULL ORDER BY created_at desc LIMIT 1[0m
+  Rendering /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/authorizations/new.html.erb within layouts/doorkeeper/application
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/authorizations/new.html.erb within layouts/doorkeeper/application (4.3ms)
+Completed 200 OK in 33ms (Views: 24.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/oauth/authorize?client_id=360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code&scope=public+write" for 127.0.0.1 at 2017-11-21 17:23:16 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code", "scope"=>"public write"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mDoorkeeper::Application Load (0.5ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`uid` = '360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5' LIMIT 1[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDoorkeeper::AccessToken Load (0.6ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`application_id` = 1 AND `oauth_access_tokens`.`resource_owner_id` = 1 AND `oauth_access_tokens`.`revoked_at` IS NULL ORDER BY created_at desc LIMIT 1[0m
+  Rendering /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/authorizations/new.html.erb within layouts/doorkeeper/application
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/authorizations/new.html.erb within layouts/doorkeeper/application (3.7ms)
+Completed 200 OK in 31ms (Views: 23.1ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/oauth/authorize" for 127.0.0.1 at 2017-11-21 17:23:19 +0500
+Processing by Doorkeeper::AuthorizationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vcMpj3uQw+3VNNFlZgWp2vhcTflIQ+gLkf3b3LMszPS7FPFKZfIxdYOvLbKTeQp0Xp9TC/DRkKJUDNHnY8dR8g==", "client_id"=>"360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5", "redirect_uri"=>"http://localhost:3001/oauth/callback", "state"=>"", "response_type"=>"code", "scope"=>"public write", "commit"=>"Authorize"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mDoorkeeper::Application Load (0.6ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`uid` = '360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5' LIMIT 1[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDoorkeeper::AccessGrant Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `oauth_access_grants` WHERE `oauth_access_grants`.`token` = BINARY '1989d10e6db6b44a1758f3cc1ee70f281bb47d8ece648ef2e18f7afcfe507f96' LIMIT 1[0m
+  [1m[35mSQL (36.9ms)[0m  [1m[32mINSERT INTO `oauth_access_grants` (`resource_owner_id`, `application_id`, `token`, `expires_in`, `redirect_uri`, `created_at`, `scopes`) VALUES (1, 1, '1989d10e6db6b44a1758f3cc1ee70f281bb47d8ece648ef2e18f7afcfe507f96', 600, 'http://localhost:3001/oauth/callback', '2017-11-21 12:23:19', 'public write')[0m
+  [1m[35m (71.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3001/oauth/callback?code=1989d10e6db6b44a1758f3cc1ee70f281bb47d8ece648ef2e18f7afcfe507f96
+Completed 302 Found in 123ms (ActiveRecord: 111.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 17:23:24 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered pages/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 62ms (Views: 58.9ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2017-11-21 17:23:26 +0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3oLa67VcNK0zia5bm2vE//BBLiKAXq1OQ+Obsxzo57GHggpwuIEO2F9q0Gj84c11a9JttNayW/XxJprsgKiiCw=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 17:23:26 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 41ms (Views: 39.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/oauth/authorize?client_id=360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code&scope=public+write" for 127.0.0.1 at 2017-11-21 17:23:44 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code", "scope"=>"public write"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_resource_owner! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-11-21 17:23:44 +0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 51ms (Views: 49.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-11-21 17:23:49 +0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lAYtlpZMeGD3MehDRP+vJLl5aH8G5MMurePd6JqyQ5vNBv0Nm5FCFZvSlnAjdaauIuor6VAINZUfJty3BvIGIQ==", "email"=>"junaid@example.com", "password"=>"[FILTERED]", "commit"=>"Log In!"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'junaid@example.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 131ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 17:23:49 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered pages/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 51ms (Views: 49.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/oauth/authorize?client_id=360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code&scope=public+write" for 127.0.0.1 at 2017-11-21 17:24:12 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code", "scope"=>"public write"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mDoorkeeper::Application Load (0.6ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`uid` = '360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5' LIMIT 1[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDoorkeeper::AccessToken Load (0.5ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`application_id` = 1 AND `oauth_access_tokens`.`resource_owner_id` = 1 AND `oauth_access_tokens`.`revoked_at` IS NULL ORDER BY created_at desc LIMIT 1[0m
+  Rendering /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/authorizations/new.html.erb within layouts/doorkeeper/application
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/authorizations/new.html.erb within layouts/doorkeeper/application (3.4ms)
+Completed 200 OK in 31ms (Views: 22.8ms | ActiveRecord: 1.6ms)
+
+
+Started DELETE "/oauth/authorize" for 127.0.0.1 at 2017-11-21 17:24:16 +0500
+Processing by Doorkeeper::AuthorizationsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lPebGkc1j8xWG80sbiiXYvGA0lgoJRMkrdJOioSzG7OWbvGHkv2jXw0eq3iDvPnEAUMYs9ih2FTmYOtxYxn1ow==", "client_id"=>"360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5", "redirect_uri"=>"http://localhost:3001/oauth/callback", "state"=>"", "response_type"=>"code", "scope"=>"public write", "commit"=>"Deny"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mDoorkeeper::Application Load (0.5ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`uid` = '360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5' LIMIT 1[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3001/oauth/callback?error=access_denied&error_description=The+resource+owner+or+authorization+server+denied+the+request.
+Completed 302 Found in 6ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 17:24:21 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered pages/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 61ms (Views: 59.1ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2017-11-21 17:24:23 +0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NichiSSmzfjO8zKb6NYqWmm0ojq+P3e+J7JLyMnCBGtvJ/ESKXv3jaIQTKiPXCPQ8ifhrOjTgQWVd0qXVYJB0Q=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 17:24:23 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 47ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/oauth/authorize?client_id=360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code&scope=public+write" for 127.0.0.1 at 2017-11-21 17:29:25 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code", "scope"=>"public write"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_resource_owner! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-11-21 17:29:25 +0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 74ms (Views: 72.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-21 17:29:29 +0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.6ms)
+  Rendered users/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 70ms (Views: 67.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-11-21 17:29:37 +0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Txb/fk9ZsMNCOtNbvv/bkE96X9ZLmIn1nA9MA14Rs2kKaqrELSk5iZEvioxam3nMjKsKOXrfwzeFLGPKL+4Vrw==", "user"=>{"email"=>"junaid@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (17.5ms)[0m  [1m[32mINSERT INTO `users` (`email`, `password_digest`, `created_at`, `updated_at`) VALUES ('junaid@example.com', '$2a$10$t2WuCawAUEYXct6EEcTvSekl6Sv8mWi38Hzr4YMPu1SU3FPLehDXK', '2017-11-21 12:29:38', '2017-11-21 12:29:38')[0m
+  [1m[35m (75.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 230ms (ActiveRecord: 93.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 17:29:38 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  Rendered pages/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 46ms (Views: 43.9ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2017-11-21 17:29:46 +0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Ef9qyOjfrvRWYsOQ4bgblRVR1W9UDDU5+gejfzX0ez1I/7pT5QKUgTqBvaOGMhIfjsKW+QLgw4JIwqIgqbQ+hw=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 17:29:46 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 62ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-21 17:29:49 +0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.9ms)
+  Rendered users/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 54ms (Views: 52.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-11-21 17:29:50 +0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 104ms (Views: 102.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-11-21 17:29:55 +0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bcbKe3YP3Ra1ZdFCEZqNqdQyOyCCybZqS/GaYKGPcc/iwEDvRVq+8HX8YEa0SpY8mEBdjV82sKPyPe6b/Y8Hig==", "email"=>"junaid@example.com", "password"=>"[FILTERED]", "commit"=>"Log In!"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'junaid@example.com' LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 198ms (Views: 67.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-11-21 17:30:07 +0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gSUqxS52dIV3ZQ8aUdU6DGTmkZQMuSzVzm+OeNqHb+bYJfpeI6tO8BuGcSk2XzOG/3XSAlpV2m58qo8nRscqXA==", "email"=>"junaid@example.com", "password"=>"[FILTERED]", "commit"=>"Log In!"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'junaid@example.com' LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 169ms (Views: 39.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-21 17:30:10 +0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.7ms)
+  Rendered users/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 51ms (Views: 48.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-11-21 17:30:18 +0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 63ms (Views: 60.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/oauth/authorize?client_id=360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code&scope=public+write" for 127.0.0.1 at 2017-11-21 17:30:27 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code", "scope"=>"public write"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_resource_owner! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-11-21 17:30:27 +0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 60ms (Views: 57.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/oauth/authorize?client_id=360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code&scope=public+write" for 127.0.0.1 at 2017-11-21 17:39:10 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code", "scope"=>"public write"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_resource_owner! rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-11-21 17:39:10 +0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 41ms (Views: 39.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-11-21 17:39:21 +0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0/I63a8k8K1XtmNtvaRFBYTWaWsLFWUHDcHwMjFKaQ6K8upGovnK2DtVHV7aLkyPH0Uq/V35k7y/BPFtrQostA==", "email"=>"junaid@example.com", "password"=>"[FILTERED]", "commit"=>"Log In!"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'junaid@example.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 131ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 17:39:21 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered pages/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 41ms (Views: 39.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/oauth/authorize?client_id=360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code&scope=public+write" for 127.0.0.1 at 2017-11-21 17:41:09 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code", "scope"=>"public write"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mDoorkeeper::Application Load (1.4ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`uid` = '360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5' LIMIT 1[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDoorkeeper::AccessToken Load (1.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`application_id` = 1 AND `oauth_access_tokens`.`resource_owner_id` = 1 AND `oauth_access_tokens`.`revoked_at` IS NULL ORDER BY created_at desc LIMIT 1[0m
+  Rendering /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/authorizations/new.html.erb within layouts/doorkeeper/application
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/authorizations/new.html.erb within layouts/doorkeeper/application (3.2ms)
+Completed 200 OK in 33ms (Views: 23.1ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 17:41:20 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered pages/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 68ms (Views: 66.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2017-11-21 17:41:22 +0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Dhw+bTgBrZBd4V8xO4ZzOf2+uW9z+/XIF2S7dDDVtGZXHO72NdyX5TECIQJcDHqzZi36+SUXA3OloborrJXx3A=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 17:41:22 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 46ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/oauth/authorize?client_id=360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code&scope=public+write" for 127.0.0.1 at 2017-11-21 17:41:29 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code", "scope"=>"public write"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_resource_owner! rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-11-21 17:41:29 +0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-11-21 17:41:36 +0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gmeUCXpv77jkNzXVbfxXhMmBNZ9+bUuL2QqGT3A/eNnbZ0SSd7LVzYjUS+YKdl4OUhJ2CSiBvTBrz4cQ7H89Yw==", "email"=>"junaid@example.com", "password"=>"[FILTERED]", "commit"=>"Log In!"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'junaid@example.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 132ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 17:41:36 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered pages/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 47ms (Views: 45.9ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2017-11-21 17:53:11 +0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+vIO+Cb/yzYbS+/22eU370tC8WNqWbeOMeQTDcOhYSaj8t5jKyLxQ3eokcW+bz5l0NGy9Ty1QTWDIRJSX+EknA=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 17:53:11 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 285ms (Views: 284.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 17:56:46 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 51ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/oauth/authorize?client_id=360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code&scope=public+write" for 127.0.0.1 at 2017-11-21 17:56:58 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code", "scope"=>"public write"}
+  [1m[36mUser Load (9.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_resource_owner! rendered or redirected
+Completed 302 Found in 13ms (ActiveRecord: 9.8ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-11-21 17:56:58 +0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 63ms (Views: 50.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/oauth/authorize?client_id=360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code&scope=public+write" for 127.0.0.1 at 2017-11-21 18:03:56 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code", "scope"=>"public write"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_resource_owner! rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-11-21 18:03:56 +0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 48ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-21 18:03:58 +0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (1.1ms)
+  Rendered users/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-11-21 18:04:00 +0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 53ms (Views: 51.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-21 18:04:01 +0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (1.5ms)
+  Rendered users/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 60ms (Views: 58.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/oauth/applications" for 127.0.0.1 at 2017-11-21 18:13:27 +0500
+Processing by Doorkeeper::ApplicationsController#index as HTML
+  Rendering /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/index.html.erb within layouts/doorkeeper/admin
+  [1m[36mDoorkeeper::Application Load (0.5ms)[0m  [1m[34mSELECT `oauth_applications`.* FROM `oauth_applications`[0m
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/_delete_form.html.erb (4.7ms)
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/index.html.erb within layouts/doorkeeper/admin (18.5ms)
+Completed 200 OK in 119ms (Views: 101.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/oauth/applications" for 127.0.0.1 at 2017-11-21 18:14:44 +0500
+Processing by Doorkeeper::ApplicationsController#index as HTML
+  Rendering /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/index.html.erb within layouts/doorkeeper/admin
+  [1m[36mDoorkeeper::Application Load (0.3ms)[0m  [1m[34mSELECT `oauth_applications`.* FROM `oauth_applications`[0m
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/_delete_form.html.erb (1.7ms)
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/index.html.erb within layouts/doorkeeper/admin (6.4ms)
+Completed 200 OK in 27ms (Views: 23.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/oauth/applications" for 127.0.0.1 at 2017-11-21 18:17:17 +0500
+  [1m[35m (33.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Doorkeeper::ApplicationsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_admin! rendered or redirected
+Completed 302 Found in 30ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-11-21 18:17:17 +0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 811ms (Views: 808.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/oauth/authorize" for 127.0.0.1 at 2017-11-21 18:17:27 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+Resource Owner find failed due to Doorkeeper.configure.resource_owner_authenticator being unconfigured.
+  [1m[36mDoorkeeper::Application Load (0.7ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`uid` = '' LIMIT 1[0m
+  Rendering /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/authorizations/error.html.erb within layouts/doorkeeper/application
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/authorizations/error.html.erb within layouts/doorkeeper/application (0.8ms)
+Completed 200 OK in 342ms (Views: 209.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/oauth/applications" for 127.0.0.1 at 2017-11-21 18:17:37 +0500
+Processing by Doorkeeper::ApplicationsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_admin! rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-11-21 18:17:37 +0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 75ms (Views: 73.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 18:18:57 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 65ms (Views: 61.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/oauth/authorize?client_id=360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code&scope=public+write" for 127.0.0.1 at 2017-11-21 18:19:04 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code", "scope"=>"public write"}
+Resource Owner find failed due to Doorkeeper.configure.resource_owner_authenticator being unconfigured.
+  [1m[36mDoorkeeper::Application Load (0.4ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`uid` = '360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5' LIMIT 1[0m
+Resource Owner find failed due to Doorkeeper.configure.resource_owner_authenticator being unconfigured.
+Resource Owner find failed due to Doorkeeper.configure.resource_owner_authenticator being unconfigured.
+Completed 500 Internal Server Error in 143ms (ActiveRecord: 92.7ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+doorkeeper (4.2.6) app/controllers/doorkeeper/authorizations_controller.rb:31:in `matching_token?'
+doorkeeper (4.2.6) app/controllers/doorkeeper/authorizations_controller.rb:7:in `new'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/oauth/authorize?client_id=360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code&scope=public+write" for 127.0.0.1 at 2017-11-21 18:20:13 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code", "scope"=>"public write"}
+Resource Owner find failed due to Doorkeeper.configure.resource_owner_authenticator being unconfigured.
+  [1m[36mDoorkeeper::Application Load (0.4ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`uid` = '360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5' LIMIT 1[0m
+Resource Owner find failed due to Doorkeeper.configure.resource_owner_authenticator being unconfigured.
+Resource Owner find failed due to Doorkeeper.configure.resource_owner_authenticator being unconfigured.
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+doorkeeper (4.2.6) app/controllers/doorkeeper/authorizations_controller.rb:31:in `matching_token?'
+doorkeeper (4.2.6) app/controllers/doorkeeper/authorizations_controller.rb:7:in `new'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/oauth/authorize?client_id=360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code&scope=public+write" for 127.0.0.1 at 2017-11-21 18:20:33 +0500
+  [1m[35m (10.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code", "scope"=>"public write"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_resource_owner! rendered or redirected
+Completed 302 Found in 26ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-11-21 18:20:33 +0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 348ms (Views: 346.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-21 18:20:35 +0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.5ms)
+  Rendered users/new.html.erb within layouts/application (59.7ms)
+Completed 200 OK in 112ms (Views: 99.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-11-21 18:20:36 +0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 62ms (Views: 59.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-11-21 18:20:37 +0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wYoxUEGoSP6l13/s24OnGiS/WPvE/svhp6qZx/9fHzdOjLvEcv0rGGVOzuh+U7yPaM0+VhkBzSgeZu08o19pcg==", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In!"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = '' LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 57ms (Views: 50.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-11-21 18:20:38 +0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dFmgKKhVfbKJBlAsHHO+y4uY6VkUTKQSq86SoU/LAo8tWXCzpYhHx+XlLh97+bdBEAuqz0KgUqkZC5P+04tHNQ==", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In!"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = '' LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 55ms (Views: 51.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-11-21 18:20:39 +0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4J7bQUccdbZ+PswtXwJBFGlji3TVeXbaLkcfR2vPxs25ngvaSsFPwxLdsh44iEie8vDI4oOVgGGcgh4Y94+Ddw==", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In!"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = '' LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 51ms (Views: 47.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-11-21 18:20:39 +0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FFZJwaiwBbOWJ6SiWshEB7H40QKXpHPkSRbTEPsSrThNVplapW0/xvrE2pE9Qk2NKmuSlMFIhV/709JPZ1Logg==", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In!"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = '' LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 78ms (Views: 76.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/oauth/authorize?client_id=360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code&scope=public+write" for 127.0.0.1 at 2017-11-21 18:46:41 +0500
+  [1m[35m (20.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code", "scope"=>"public write"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_resource_owner! rendered or redirected
+Completed 302 Found in 18ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-11-21 18:46:41 +0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 350ms (Views: 348.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-21 18:46:44 +0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.6ms)
+  Rendered users/new.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 77ms (Views: 63.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-11-21 18:46:53 +0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l1/zqJpO+trzx8ZgLXhD6ZP0z+30j7yd1oyAKwTYST/SI6YS+D5zkCDSn7fJHOG1UCWaAsXI9l/Pr6/idSfv+Q==", "user"=>{"email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (1.0ms)
+  Rendered users/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 180ms (Views: 45.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-11-21 18:47:00 +0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1SQjkGG3HtTXLuedrVlsXXlRIvnyBUr9CiF/XJwggjaMJPMLbGokobvNma7K02XX4sJhb6TpvEa45H4DAGDHjA==", "user"=>{"email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (25.6ms)[0m  [1m[32mINSERT INTO `users` (`email`, `password_digest`, `created_at`, `updated_at`) VALUES ('user@example.com', '$2a$10$aeQXD4DKpcSTKuQbks8/a.FS6wCl1rrDQCgnL3mxNdq3GkJScFA06', '2017-11-21 13:47:00', '2017-11-21 13:47:00')[0m
+  [1m[35m (86.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 248ms (ActiveRecord: 112.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 18:47:00 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendered pages/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 76ms (Views: 74.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/oauth/authorize?client_id=360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Foauth%2Fcallback&response_type=code&scope=public+write" for 127.0.0.1 at 2017-11-21 18:47:08 +0500
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5", "redirect_uri"=>"http://localhost:3001/oauth/callback", "response_type"=>"code", "scope"=>"public write"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[36mDoorkeeper::Application Load (0.6ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`uid` = '360bb9c5662d4bfbc976e27d8cae13dbc6dd36b2c6dd6bd2c01b42464d0b18b5' LIMIT 1[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mDoorkeeper::AccessToken Load (1.6ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`application_id` = 1 AND `oauth_access_tokens`.`resource_owner_id` = 3 AND `oauth_access_tokens`.`revoked_at` IS NULL ORDER BY created_at desc LIMIT 1[0m
+  Rendering /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/authorizations/new.html.erb within layouts/doorkeeper/application
+  Rendered /home/zeeshan/.rvm/gems/ruby-2.4.1/gems/doorkeeper-4.2.6/app/views/doorkeeper/authorizations/new.html.erb within layouts/doorkeeper/application (5.3ms)
+Completed 200 OK in 96ms (Views: 65.4ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 18:47:25 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendered pages/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 49ms (Views: 46.9ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2017-11-21 18:47:27 +0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zgBrN/37P1aqIA8kGROeoYo36jSyfY/FRue57iw984KXALus8CYFI8bDcRd+mZcrEaSpouSReX70IrixsH22OA=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 18:47:28 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 74ms (Views: 71.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-11-21 18:48:52 +0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 60ms (Views: 58.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-11-21 18:49:04 +0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hEsvrXv9qWvJXkM01DWDZvj688pjGZk5E5l4G4RwmRELTaU5SKjKjQnH8jBx5ZjztIiVZ77mn/CqVQzg2HDvVA==", "email"=>"user@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In!"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'user@gmail.com' LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 68ms (Views: 63.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 18:50:47 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 69ms (Views: 67.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2017-11-21 18:50:49 +0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 42ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-11-21 18:50:54 +0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kDncGF6W39D+Gpin+F+d2MQfIeZS+g1o3xYvKwh/e4UfP1aMbcO8Nj6DKaNdj4ZNiG1HS48FC6Fm2lvQVH8NwA==", "email"=>"user@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In!"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'user@gmail.com' LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 50ms (Views: 45.9ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-11-21 18:51:05 +0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"axCu/fJCudlTTthkdMlGjQYyHhVUPhIkC4b87V95lswyEH5m/5+DrD+tplcTQ08HnaFdgwLS5J+5Q/2ywznTdg==", "email"=>"junaid@example.com", "password"=>"[FILTERED]", "commit"=>"Log In!"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'junaid@example.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 130ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 18:51:05 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered pages/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 45ms (Views: 43.2ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2017-11-21 18:51:23 +0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"PPFzpGSBLLy39+YRZMvSQDABMmKb83MLHmAOlZIDmLNl8aM/aVwWydsUmCIDQdvKq5Jx9M0fhbCspQ/KDkPdCQ=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 18:51:23 +0500
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 48ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
